@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html  lang="en">
+<meta charset="UTF-8">
 <head>
 	<title>Service Man</title>
 	  <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -7,60 +8,97 @@
    <script src="../js/bootstrap.min.js"></script>
   
 </head>
-<body>
-<!--navbar-->
+<body style="padding-top: 50px;">
 
-<header class="navbar navbar-default navbar-fixed-top "  >
-  <div class="container-fluid">
-    <div class="navbar-header">
-    <!--toogle-->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg fixed-top bg-info navbar-dark">
+  
+    
       <!--logo-->
       <a class="navbar-brand" href="main.php">Service Man</a>
-    </div>
+      <!--toogle-->
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
     <!--navitems-->
     <div class="collapse navbar-collapse" id="myNavbar">
     <!--navbar menu left-->
 
-      <ul class="nav navbar-nav">
-        <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services
-  
-    <b class="caret"></b></a>
-
-  <ul class="dropdown-menu">
-    <li><a href="#nowshowing"><b>...</b></a></li>
-    <li class="divider"></li>
-    <li><a href="#comingsoon"><b>....</b></a></li>
-  </ul>
-  
-        
-      </ul>
+      
       <!--navbar menu right-->
 
-<ul class="nav navbar-nav navbar-right">
-        <li><a href="register.php"> Register</a></li>
+<ul class="navbar-nav ml-auto">
+        <li><a href="register.php" class="nav-link"> Register</a></li>
+      
+    
+        <li><a href="login.php" data-modal="signinPopup" class="nav-link"> Login</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.php" data-modal="signinPopup"> Login</a></li>
-      </ul>
-    </div>   
+       
   </div><!--navbar-->
-</header>
+</nav>
 
   <!--content-->
-  <div class="container-fluid">
- <div class="row flex-xl-nowrap">
-        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          <form class="bd-search d-flex align-items-center">
-  <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
-</button>
-</form>
-</div>
-</div>
+  
+  <img src="../images/second.jpg" style="width:100%; height: 300px;" class="img-fluid"> 
+<!--jumbotron-->
+</br>
+ 
+  <div class="container">
+  </br>
+   <center><h2>Our Services</h2></center>
+ </br>
+<div class="card-columns">
+  <style type="text/css">
+    .card{
+      height: 100px;
+
+    }
+    .card-body{
+      padding-top: 25px;
+      font-size: 30px;
+      font-family: sans-serif ;
+
+    }
+  </style>
+   <a  href="login.php"> <div class="card bg-light text-center">
+    
+       <div class="card-body text-info">Plumbing</div>
+      
+    </div></a>
+    <a  href="login.php"> <div class="card bg-light text-center">
+    
+       <div class="card-body text-info">Electrician</div>
+      
+    </div></a>
+    <a  href="login.php"> <div class="card bg-light text-center">
+    
+       <div class="card-body text-info">Mechanic</div>
+      
+    </div></a>
+    <a  href="login.php"> <div class="card bg-light text-center">
+    
+       <div class="card-body text-info">Driver</div>
+      
+    </div></a>
+    <a  href="login.php"> <div class="card bg-light text-center">
+    
+       <div class="card-body text-info">Cleaner</div>
+      
+    </div></a>
+    <a  href="login.php"> <div class="card bg-light text-center">
+    
+       <div class="card-body text-info">Washer</div>
+      
+    </div></a>
+
+
+</div><!--cardcloumn-->
+
+  
+</div><!--container-->
+
+
 </body>
 </html>
